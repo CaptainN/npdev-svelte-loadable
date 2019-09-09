@@ -1,5 +1,6 @@
-export const ALL_LOADERS = new Map()
 import { LOADED } from './svelte-loadable.svelte'
+
+export const ALL_LOADERS = new Map()
 
 export function findLoader (resolved) {
   for (let [loader, r] of ALL_LOADERS) {
