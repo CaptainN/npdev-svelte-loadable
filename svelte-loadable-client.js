@@ -1,7 +1,8 @@
 import { EJSON } from 'meteor/ejson'
 import { LOADED } from './svelte-loadable.svelte'
+import { findLoader } from './svelte-loadable-both'
 
-export { register, preloadAll, findLoader } from './svelte-loadable-both'
+export { register, preloadAll } from './svelte-loadable-both'
 export { default as LoadableProvider } from './svelte-loadable-provider-client.svelte'
 export { default as Loadable } from './svelte-loadable.svelte'
 
