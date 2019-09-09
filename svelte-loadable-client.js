@@ -6,8 +6,8 @@ export { register, preloadAll } from './svelte-loadable-both'
 export { default as LoadableProvider } from './svelte-loadable-provider-client.svelte'
 export { default as Loadable } from './svelte-loadable.svelte'
 
-const preload = (preloadables) => {
-  return Promise.all(preloadables
+const preload = (hydratables) => {
+  return Promise.all(hydratables
     .map(resolved => findLoader(resolved))
     .filter(loader => !LOADED.has(loader))
     .map(loader => loader().then((componentModule) => {
@@ -25,12 +25,12 @@ const preload = (preloadables) => {
 const resolved = () => new Promise((resolve) => { resolve() })
 
 export const loadHydratables = (id = '__hydratables__') => {
-  const preloadablesNode = document.getElementById(id)
-  if (preloadablesNode) {
-    const preloadables = EJSON.parse(preloadablesNode.innerText)
-    preloadablesNode.parentNode.removeChild(preloadablesNode)
-    return (preloadables.length > 0)
-      ? preload(preloadables)
+  const hydratablesNode = document.getElementById(id)
+  if (hydratablesNode) {
+    const hydratables = EJSON.parse(hydratablesNode.innerText)
+    hydratablesNode.parentNode.removeChild(hydratablesNode)
+    return (hydratables.length > 0)
+      ? preload(hydratables)
       : resolved()
   } else {
     return resolved()
