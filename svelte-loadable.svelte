@@ -17,6 +17,7 @@ const STATES = Object.freeze({
  * @see https://github.com/kaisermann/svelte-loadable
  */
 import { onMount, getContext } from 'svelte'
+import { ALL_LOADERS } from './svelte-loadable-both'
 
 export let delay = 200
 export let timeout = null
@@ -37,7 +38,7 @@ $: {
 }
 
 const capture = getContext('svelte-loadable-capture')
-if (typeof capture === 'function') {
+if (typeof capture === 'function' && ALL_LOADERS.has(loader)) {
   capture(loader)
 }
 
