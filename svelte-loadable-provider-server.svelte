@@ -1,7 +1,7 @@
 <script>
 import { setContext } from 'svelte'
 import { EJSON } from 'meteor/ejson'
-import { ALL_LOADERS } from './svelte-loadable-both'
+import { ALL_LOADERS } from './svelte-loadable.svelte'
 
 const loaders = []
 setContext('svelte-loadable-capture', (loader) => {
