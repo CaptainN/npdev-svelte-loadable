@@ -124,7 +124,7 @@ This comes with additional benefits and opportunities as well. There is now a `p
 Preloads all registered Loaders. Works server side, and client side.
 
 ```js
-import { preloadAll } from 'svelte-loadable'
+import { preloadAll } from 'meteor/npdev:svelte-loadable'
 
 // Somewhere in your code, after the initial tree is rendered:
 preloadAll();
