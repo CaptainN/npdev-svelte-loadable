@@ -3,7 +3,12 @@ npdev:svetle-loadable
 
 An easy way to split code at the component level dynamic imports for Meteor. This is a port from the original `svelte-loadable` project to Meteor, which adds SSR and hydration support, with a few other enhancements.
 
-Install with: 'meteor add npdev:svelte-loadable`
+Install with:
+
+```
+meteor add npdev:svelte-loadable
+meteor npm i svelte-loadable
+```
 
 Check out [this starter](https://github.com/CaptainN/meteor-svelte-starter) for example integration.
 
