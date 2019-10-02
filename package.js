@@ -1,6 +1,6 @@
 Package.describe({
   name: "npdev:svelte-loadable",
-  version: "1.0.0-alpha.0",
+  version: "1.0.0-alpha.1",
   summary: "Easy code splitting with Svelte-loadable",
   git: "https://github.com/CaptainN/npdev-svelte-loadable.git"
 })
