@@ -1,8 +1,8 @@
 import { EJSON } from 'meteor/ejson'
-import { LOADED, load, findByResolved } from './svelte-loadable.svelte'
+import { LOADED, load, findByResolved } from 'svelte-loadable'
 
 export { default as LoadableProvider } from './svelte-loadable-provider-client.svelte'
-export { default as Loadable, preloadAll, register } from './svelte-loadable.svelte'
+export { default as Loadable, preloadAll, register } from 'svelte-loadable'
 
 export const loadHydratables = (id = '__hydratables__') => {
   const hydratablesNode = document.getElementById(id)
