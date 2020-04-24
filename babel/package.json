@@ -1,0 +1,25 @@
+{
+    "name": "npdev-svelte-loadable-babel",
+    "version": "1.1.0",
+    "description": "The babel plugin for use with `svelte-loadable` and/or `npdev:svelte-loadable` (for Meteor)",
+    "main": "babel.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/CaptainN/npdev-svelte-loadable.git"
+    },
+    "keywords": [
+      "svelte",
+      "loadable",
+      "code splitting",
+      "dynamic imports"
+    ],
+    "author": "James Kyle & Kevin Newman",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/CaptainN/npdev-svelte-loadable/issues"
+    },
+    "homepage": "https://github.com/CaptainN/npdev-svelte-loadable"
+  }
