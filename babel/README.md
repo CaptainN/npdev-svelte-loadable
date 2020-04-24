@@ -1,10 +1,10 @@
 # npdev-svelte-loadable-babel
 
-> Works with [`svelte-loadable`](https://github.com/kaisermann/svelte-loadable) (and [`npdev:svelte-loadable`](https://github.com/CaptainN/npdev-svelte-loadable)) to make code splitting a breeze!
+> Works with [`svelte-loadable`](https://github.com/kaisermann/svelte-loadable) (and [`npdev:svelte-loadable`](https://github.com/CaptainN/npdev-svelte-loadable)) to make code splitting in `svelte` a breeze!
 
 ## Usage
 
-A `resolve` function is necessary for the cache to keep track of its loaded assets, and for SSR solutions. The `resolve` function must return a resolved path, which will be used to keep track of loadables, and to facilitate loading before hydration in SSR solutions. This [babel plugin](#babel-plugin) can help automated the inclusion of the `resolve` function. See the [svelte-loadable readme]() to learn more about how to `register` your Loadables.
+A `resolve` function is necessary for `svelte-loadable`'s cache to keep track of its loaded assets, and for SSR solutions. The `resolve` function must return a resolved path for SSR, which will be used to keep track of loadables, and to facilitate loading before hydration in SSR solutions. This [babel plugin](#babel-plugin) can automate the inclusion of the `resolve` function, and cut down on repetative typing. See the [svelte-loadable readme](https://github.com/kaisermann/svelte-loadable#registering-a-loader) to learn more about how to set up and `register` your Loadables.
 
 The following is an example set of Loadables without using `npdev-svelte-loadable-babel`:
 
